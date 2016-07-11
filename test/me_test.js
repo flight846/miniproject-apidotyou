@@ -120,7 +120,7 @@ describe('GET /education/:id', () => {
     .expect(200, done)
   })
 
-  it('should return an object containing the fields "title", "description" and "color"', (done) => {
+  it('should return an object containing the fields "school" and "subjects"', (done) => {
     api.get('/education/1')
     .set('Accept', 'application/json')
     .end((error, response) => {
