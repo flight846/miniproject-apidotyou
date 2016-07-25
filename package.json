@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "source .env; node app.js",
-    "test": "mocha"
+    "test": "source .env; mocha"
   },
   "dependencies": {
     "body-parser": "~1.15.1",
