@@ -16,9 +16,11 @@ seeder.connect(process.env.MONGODB_URI, function () {
   ])
 
   // Clear specified collections
-  seeder.clearModels(['About', 'Projects', 'Education', 'Skill', 'Social', 'Work'], function () {
+  seeder.clearModels(['About', 'Project', 'Education', 'Skill', 'Social', 'Work'], function () {
     // Callback to populate DB once collections have been cleared
-    seeder.populateModels(data)
+    seeder.populateModels(data, function () {
+      console.log('Success!')
+    })
   })
 })
 

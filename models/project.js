@@ -5,7 +5,7 @@ var ProjectSchema = new Schema({
   title: String,
   description: String,
   link: String,
-  skills: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Skills' }]
+  skills: []
 })
 
 module.exports = mongoose.model('Project', ProjectSchema)
