@@ -89,10 +89,12 @@ var me = {
     'HTML': 9,
     'CSS': 8,
     'Javascript': 7,
+    'JQuery': 7,
     'Ruby': 7,
+    'Rails': 7,
     'Node': 7.5,
     'Express': 7.5,
-    'ReactJS': 6.0
+    'ReactJS': 6
   }],
   'education': [
     {
