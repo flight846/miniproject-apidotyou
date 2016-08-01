@@ -13,11 +13,11 @@ var me = {
       'description': 'I am a self-taught web developer and recently graduate from General Assembly Web Development Immersive Bootcamp in August 2016. I also develop in Ruby on Rails and Node & ExpressJS, I can do : HTML5/CSS3/JS/Ruby coding, Responsive layout development. I believe web development is an art, and I try to master it beautifully... created with ♡ :)'
     },
     {
-      'Social': 'http://api-yazidismail.herokuapp.com/social',
-      'Projects': 'http://api-yazidismail.herokuapp.com/projects',
-      'Skills': 'http://api-yazidismail.herokuapp.com/skills',
-      'Education': 'http://api-yazidismail.herokuapp.com/education',
-      'Work': 'http://api-yazidismail.herokuapp.com/work'
+      'social': 'http://api-yazidismail.herokuapp.com/social',
+      'projects': 'http://api-yazidismail.herokuapp.com/projects',
+      'skills': 'http://api-yazidismail.herokuapp.com/skills',
+      'education': 'http://api-yazidismail.herokuapp.com/education',
+      'work': 'http://api-yazidismail.herokuapp.com/work'
     }
   ],
 
