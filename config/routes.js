@@ -144,23 +144,23 @@ router.get('/', (req, res) => {
 router.get('/socials', (req, res) => {
   // we only have a single profile in the db, so the first one is fine
   Social.findOne({}, (err, social) => {
-    if (err) return res.status(404).json({message: 'About not found'})
+    if (err) return res.status(404).json({message: 'Social not found'})
     res.json(social)
   })
 })
 
-// Keep project routes in a seperate controller file
-router.get('/projects', projectsController.index)
-router.get('/projects/:id', projectsController.show)
-
-// Skills Routes inline
-router.get('/', (req, res) => {
+// Profile Routes inline
+router.get('/skill', (req, res) => {
   // we only have a single profile in the db, so the first one is fine
   Skill.findOne({}, (err, skill) => {
     if (err) return res.status(404).json({message: 'Skill not found'})
     res.json(skill)
   })
 })
+
+// Keep project routes in a seperate controller file
+router.get('/projects', projectsController.index)
+router.get('/projects/:id', projectsController.show)
 
 // Keep project routes in a seperate controller file
 router.get('/education', educationController.index)
