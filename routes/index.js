@@ -9,7 +9,7 @@ router.use(function (req, res, next) {
 var me = {
   'about': {
     'name': 'Abdul Yazid Ismail',
-    'description': 'I am a self-taught web developer and also develop in Ruby on Rails and Node & ExpressJS, I can do : HTML5/CSS3/JS/Ruby coding, Responsive layout development. I believe web development is an art, and I try to master it beautifully... created with ♡ :)'
+    'description': 'I am a self-taught web developer and graduate recently from General Assembly Web Development Immersive on August 2016. I also develop in Ruby on Rails and Node & ExpressJS, I can do : HTML5/CSS3/JS/Ruby coding, Responsive layout development. I believe web development is an art, and I try to master it beautifully... created with ♡ :)'
   },
 
   'social': [
