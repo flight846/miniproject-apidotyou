@@ -1,5 +1,6 @@
 var express = require('express')
 var mongoose = require('mongoose')
+var routes = require('./config/routes')
 var path = require('path')
 // var favicon = require('serve-favicon')
 var logger = require('morgan')
@@ -10,9 +11,6 @@ const dotenv = require('dotenv')
 dotenv.load()
 
 mongoose.createConnection(process.env.MONGODB_URI)
-
-var routes = require('./routes/index')
-var users = require('./routes/users')
 
 var app = express()
 const port = process.env.PORT || 3000
@@ -26,9 +24,6 @@ app.use(cookieParser())
 app.use(express.static(path.join(__dirname, 'public')))
 
 mongoose.connect(process.env.MONGODB_URI)
-
-app.use('/', routes)
-app.use('/users', users)
 
 // ROUTES
 const router = require('./config/routes')
