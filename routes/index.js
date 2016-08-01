@@ -10,7 +10,9 @@ var me = {
   'about': [
     {
       'name': 'Abdul Yazid Ismail',
-      'description': 'I am a self-taught web developer and recently graduate from General Assembly Web Development Immersive Bootcamp in August 2016. I also develop in Ruby on Rails and Node & ExpressJS, I can do : HTML5/CSS3/JS/Ruby coding, Responsive layout development. I believe web development is an art, and I try to master it beautifully... created with ♡ :)',
+      'description': 'I am a self-taught web developer and recently graduate from General Assembly Web Development Immersive Bootcamp in August 2016. I also develop in Ruby on Rails and Node & ExpressJS, I can do : HTML5/CSS3/JS/Ruby coding, Responsive layout development. I believe web development is an art, and I try to master it beautifully... created with ♡ :)'
+    },
+    {
       'Social': 'http://api-yazidismail.herokuapp.com/social',
       'Projects': 'http://api-yazidismail.herokuapp.com/projects',
       'Skills': 'http://api-yazidismail.herokuapp.com/skills',
