@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "source .env; node app.js",
-    "test": "source .env; mocha"
+    "test": "source .env; mocha",
+    "seed": "node models/seed.js"
   },
   "dependencies": {
     "body-parser": "~1.15.1",
