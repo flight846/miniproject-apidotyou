@@ -31,10 +31,22 @@ var me = {
 
   'projects': [
     {
+      'title': 'A personal website and blog built on Wordpress and API call for displaying items for resume',
+      'description': 'This website serves the user blogs, portfolio and resume by me.',
+      'link': 'https://www.yazidismail.com',
+      'skills': ['HTML', 'CSS', 'NodeJS', 'ExpressJS', 'JSON', 'MongoDB', 'PHP']
+    },
+    {
       'title': 'An ExpressJS articles aggregation platform',
       'description': 'This articles TLDR generator app lets the user to aggregates, curates and serves quality articles. Say goodbye to internet junk.',
       'link': 'https://flight846.github.io/readr-client/',
       'skills': ['HTML', 'SCSS', 'NodeJS', 'ExpressJS', 'JSON', 'MongoDB']
+    },
+    {
+      'title': 'API Server',
+      'description': 'A simple API server for my personal resume page built with NodeJS and ExpressJS framework',
+      'link': 'http://api-yazidismail.herokuapp.com/',
+      'skills': ['NodeJS', 'ExpressJS', 'JSON', 'MongoDB']
     },
     {
       'title': 'API Client',
