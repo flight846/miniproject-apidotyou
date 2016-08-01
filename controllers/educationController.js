@@ -7,7 +7,8 @@ function listEducation (req, res) {
     // rather than return all data which could be huge, we create a simplified array with only a couple of key fields
     const simplifiedList = []
     for (let i = 0; i < educationArray.length; ++i) {
-      simplifiedList.push({id: educationArray[i].id, title: educationArray[i].name})
+      console.log(educationArray)
+      simplifiedList.push({id: educationArray[i].id, school: educationArray[i].school, subjects: educationArray[i].subjects})
     }
     res.status(200).json(simplifiedList)
   })

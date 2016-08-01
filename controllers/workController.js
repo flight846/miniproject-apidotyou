@@ -7,7 +7,7 @@ function listWork (req, res) {
     // rather than return all data which could be huge, we create a simplified array with only a couple of key fields
     const simplifiedList = []
     for (let i = 0; i < workArray.length; ++i) {
-      simplifiedList.push({id: workArray[i].id, title: workArray[i].name})
+      simplifiedList.push({id: workArray[i].id, company: workArray[i].company, role: workArray[i].role, duty: workArray[i].duty})
     }
     res.status(200).json(simplifiedList)
   })

@@ -141,7 +141,7 @@ var data = [
     ]
   },
   {
-    'model': 'Education',
+    'model': 'Work',
     'documents': [
       {
         'company': 'Freelance',
