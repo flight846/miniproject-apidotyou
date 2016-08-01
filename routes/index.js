@@ -37,6 +37,12 @@ var me = {
       'skills': ['HTML', 'SCSS', 'NodeJS', 'ExpressJS', 'JSON', 'MongoDB']
     },
     {
+      'title': 'API Client',
+      'description': 'A simple Github API client',
+      'link': 'https://flight846.github.io/miniproject-Github_API_Client/',
+      'skills': ['HTML', 'CSS', 'Bootstrap', 'JQuery', 'JSON']
+    },
+    {
       'title': 'A Ruby on Rails Q & A platform built on Rails Framework',
       'description': 'This simple Q & A app allows users to view, create, edit and delete qusetions and answers. Questions have a title and body (of content) ans users can answer and vote.',
       'link': 'http://queryme2016.herokuapp.com/',
@@ -47,12 +53,6 @@ var me = {
       'description': 'A Rails CRUD wiki App',
       'link': 'https://wdi3-wiki.herokuapp.com/',
       'skills': ['HTML', 'SCSS', 'Ruby', 'Rails']
-    },
-    {
-      'title': 'API Client',
-      'description': 'A simple Github API client',
-      'link': 'https://flight846.github.io/miniproject-Github_API_Client/',
-      'skills': ['HTML', 'CSS', 'Bootstrap', 'JQuery', 'JSON']
     },
     {
       'title': 'HTML 5 2-player Quiz Game',
