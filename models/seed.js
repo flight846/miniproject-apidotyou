@@ -16,7 +16,7 @@ seeder.connect(process.env.MONGODB_URI, function () {
   ])
 
   // Clear specified collections
-  seeder.clearModels(['About', 'Education', 'Skill', 'Social', 'Work'], function () {
+  seeder.clearModels(['About', 'Projects', 'Education', 'Skill', 'Social', 'Work'], function () {
     // Callback to populate DB once collections have been cleared
     seeder.populateModels(data)
   })
@@ -29,7 +29,8 @@ var data = [
     'documents': [
       {
         'name': 'Abdul Yazid Ismail',
-        'description': 'I am a self-taught web developer and recently graduate from General Assembly Web Development Immersive Bootcamp in August 2016. I also develop in Ruby on Rails and Node & ExpressJS, I can do : HTML5/CSS3/JS/Ruby coding, Responsive layout development. I believe web development is an art, and I try to master it beautifully... created with ♡ :)'
+        'description': 'I am a self-taught web developer and recently graduate from General Assembly Web Development Immersive Bootcamp in August 2016. I also develop in Ruby on Rails and Node & ExpressJS, I can do : HTML5/CSS3/JS/Ruby coding, Responsive layout development. I believe web development is an art, and I try to master it beautifully... created with ♡ :)',
+        'picture': 'Yazid.png'
       }
     ]
   },
