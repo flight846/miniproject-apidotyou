@@ -33,7 +33,7 @@ var me = {
     {
       'title': 'A personal website and blog built on Wordpress and API call for displaying items for resume',
       'description': 'This website serves the user blogs, portfolio and resume by me.',
-      'link': 'https://www.yazidismail.com',
+      'link': 'http://www.yazidismail.com',
       'skills': ['HTML', 'CSS', 'NodeJS', 'ExpressJS', 'JSON', 'MongoDB', 'PHP']
     },
     {
