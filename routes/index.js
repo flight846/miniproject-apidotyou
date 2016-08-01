@@ -9,7 +9,7 @@ router.use(function (req, res, next) {
 var me = {
   'about': {
     'name': 'Abdul Yazid Ismail',
-    'description': 'Full-stack Developer'
+    'description': 'I am a self-taught web developer and also develop in Ruby on Rails and Node & ExpressJS, I can do : HTML5/CSS3/JS/Ruby coding, Responsive layout development. I believe web development is an art, and I try to master it beautifully... created with ♡ :)'
   },
 
   'social': [
@@ -17,13 +17,19 @@ var me = {
     'linkedin': 'https://sg.linkedin.com/in/ayazidismail'
     }
   ],
-    
+
   'projects': [
     {
-      'title': 'HTML 5 Tic Tac Toe Game',
-      'description': 'A simple 2-player turn based HTML5 tic tac toe game',
-      'link': 'http://flight846.github.io/wdi-tictactoe-project/',
-      'skills': ['HTML', 'CSS', 'JavaScript', 'JQuery']   
+      'title': 'An ExpressJS articles aggregation platform',
+      'description': 'This articles TLDR generator app lets the user to aggregates, curates and serves quality articles. Say goodbye to internet junk.',
+      'link': 'https://flight846.github.io/readr-client/',
+      'skills': ['HTML', 'SCSS', 'NodeJS', 'ExpressJS', 'JSON', 'MongoDB']
+    },
+    {
+      'title': 'A Ruby on Rails Q & A platform built on Rails Framework',
+      'description': 'This simple Q & A app allows users to view, create, edit and delete qusetions and answers. Questions have a title and body (of content) ans users can answer and vote.',
+      'link': 'http://queryme2016.herokuapp.com/',
+      'skills': ['HTML', 'SCSS', 'Ruby', 'Rails']
     },
     {
       'title': 'Ruby on Rails Wiki App',
@@ -50,10 +56,10 @@ var me = {
       'skills': ['HTML', 'CSS', 'Javascript', 'JQuery']
     },
     {
-      'title': 'A Ruby on Rails Q & A platform built on Rails Framework',
-      'description': 'This simple Q & A app allows users to view, create, edit and delete qusetions and answers. Questions have a title and body (of content) ans users can answer and vote.',
-      'link': 'https://akanta21.github.io/game',
-      'skills': ['HTML', 'SCSS', 'Ruby', 'Rails']
+      'title': 'HTML 5 Tic Tac Toe Game',
+      'description': 'A simple 2-player turn based HTML5 tic tac toe game',
+      'link': 'http://flight846.github.io/wdi-tictactoe-project/',
+      'skills': ['HTML', 'CSS', 'JavaScript', 'JQuery']
     }
   ],
   'skills': [{
