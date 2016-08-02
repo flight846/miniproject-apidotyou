@@ -12,6 +12,7 @@ function listWork (req, res) {
     res.status(200).json(simplifiedList)
   })
 }
+
 function showWork (req, res) {
   Work.findById({_id: req.params.id}, (err, work) => {
     if (err) return res.status(404).json({message: 'Project not found'})
@@ -20,7 +21,28 @@ function showWork (req, res) {
   })
 }
 
+function createWork (req, res) {
+  const work = new Work(req.body)
+  work.save((err, work) => {
+    if (err) return res.status(401).json({error: 'Work Error'})
+    res.status(200).json({message: 'Work created! yay! ', work})
+  })
+}
+
+function updateWork (req, res) {
+  Work.findById({_id: req.params.id}, function (err, work) {
+    if (err) return res.status(401).json({error: 'Cannot update work'})
+    work = req.body.work
+    work.save(function (err) {
+      if (err) return res.status(401).json({error: 'Work error. cant find work to update'})
+      res.status(200).json({message: 'Work updated! yay! ', work})
+    })
+  })
+}
+
 module.exports = {
   index: listWork,
-  show: showWork
+  show: showWork,
+  create: createWork,
+  update: updateWork
 }

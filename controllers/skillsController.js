@@ -12,6 +12,7 @@ function listSkills (req, res) {
     res.status(200).json(simplifiedList)
   })
 }
+
 function showSkills (req, res) {
   Skill.findById({_id: req.params.id}, (err, skill) => {
     if (err) return res.status(404).json({message: 'Skills not found'})
@@ -20,7 +21,39 @@ function showSkills (req, res) {
   })
 }
 
+function createSkill (req, res) {
+  const skill = new Skill(req.body)
+  skill.save((err, skill) => {
+    if (err) return res.status(401).json({error: 'Skill update Error'})
+    res.status(200).json({message: 'Skill created! yay! ', skill})
+  })
+}
+
+function updateSkill (req, res) {
+  Skill.findById({_id: req.params.id}, function (err, skill) {
+    if (err) return res.status(401).json({error: 'Cannot update skill'})
+    skill = req.body.skill
+    skill.save(function (err) {
+      if (err) return res.status(401).json({error: 'Skill error. cant find about to skill'})
+      res.status(200).json({message: 'Skill updated! yay! ', skill})
+    })
+  })
+}
+
+function removeSkill (req, res) {
+  Skill.findById({_id: req.params.id}, function (err, skill) {
+    if (err) return res.status(401).json({error: 'Remove skill error. cant find skill to remove'})
+    skill.remove(function (err) {
+      if (err) return res.status(401).json({error: 'Skill remove error. cant remove skill'})
+      res.status(200).json({message: 'skill removed! Yay!'})
+    })
+  })
+}
+
 module.exports = {
   index: listSkills,
-  show: showSkills
+  show: showSkills,
+  create: createSkill,
+  update: updateSkill,
+  remove: removeSkill
 }
