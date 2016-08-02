@@ -40,11 +40,16 @@ var data = [
     'model': 'Social',
     'documents': [
       {
-        'social': 'http://api-yazidismail.herokuapp.com/social',
-        'projects': 'http://api-yazidismail.herokuapp.com/projects',
-        'skills': 'http://api-yazidismail.herokuapp.com/skills',
-        'education': 'http://api-yazidismail.herokuapp.com/education',
-        'work': 'http://api-yazidismail.herokuapp.com/work'
+        'page': 'Github',
+        'link': 'https://github.com/flight846'
+      },
+      {
+        'page': 'linkedin',
+        'link': 'https://sg.linkedin.com/in/ayazidismail'
+      },
+      {
+        'page': 'codepen',
+        'link': 'http://codepen.io/flight846/'
       }
     ]
   },
@@ -111,15 +116,40 @@ var data = [
     'model': 'Skill',
     'documents': [
       {
-        'HTML': 9,
-        'CSS': 8,
-        'Javascript': 7,
-        'JQuery': 7,
-        'Ruby': 7,
-        'Rails': 7,
-        'Node': 7.5,
-        'Express': 7.5,
-        'ReactJS': 6
+        'skill': 'HTML',
+        'score': 9
+      },
+      {
+        'skill': 'CSS',
+        'score': 8
+      },
+      {
+        'skill': 'JavaScript',
+        'score': 7
+      },
+      {
+        'skill': 'JQuery',
+        'score': 7
+      },
+      {
+        'skill': 'Ruby',
+        'score': 7
+      },
+      {
+        'skill': 'Rails',
+        'score': 7
+      },
+      {
+        'skill': 'NodeJS',
+        'score': 7.5
+      },
+      {
+        'skill': 'Express',
+        'score': 8
+      },
+      {
+        'skill': 'ReactJS',
+        'score': 5
       }
     ]
   },

@@ -2,11 +2,10 @@ var express = require('express')
 var router = express.Router()
 var About = require('../models/about')
 var projectsController = require('../controllers/projectsController')
-var Social= require('../models/social')
-var Skill= require('../models/skill')
+var socialController = require('../controllers/socialController')
+var skillsController = require('../controllers/skillsController')
 var educationController = require('../controllers/educationController')
 var workController = require('../controllers/workController')
-
 
 router.use(function (req, res, next) {
   res.header('Access-Control-Allow-Origin', '*')
@@ -140,23 +139,13 @@ router.get('/', (req, res) => {
   })
 })
 
-// Profile Routes inline
-router.get('/socials', (req, res) => {
-  // we only have a single profile in the db, so the first one is fine
-  Social.findOne({}, (err, social) => {
-    if (err) return res.status(404).json({message: 'Social not found'})
-    res.json(social)
-  })
-})
+// Keep project routes in a seperate controller file
+router.get('/socials', socialController.index)
+router.get('/socials/:id', socialController.show)
 
-// Profile Routes inline
-router.get('/skill', (req, res) => {
-  // we only have a single profile in the db, so the first one is fine
-  Skill.findOne({}, (err, skill) => {
-    if (err) return res.status(404).json({message: 'Skill not found'})
-    res.json(skill)
-  })
-})
+// Keep project routes in a seperate controller file
+router.get('/skills', skillsController.index)
+router.get('/skills/:id', skillsController.show)
 
 // Keep project routes in a seperate controller file
 router.get('/projects', projectsController.index)
