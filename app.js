@@ -1,6 +1,6 @@
 var express = require('express')
 var mongoose = require('mongoose')
-var routes = require('./config/routes')
+var router = require('./config/routes')
 var path = require('path')
 // var favicon = require('serve-favicon')
 var logger = require('morgan')
@@ -26,7 +26,6 @@ app.use(express.static(path.join(__dirname, 'public')))
 mongoose.connect(process.env.MONGODB_URI)
 
 // ROUTES
-const router = require('./config/routes')
 app.use('/', router)
 
 // catch 404 and forward to error handler
