@@ -43,7 +43,7 @@ router.get('/projects', projectsController.index)
 router.get('/projects/:id', projectsController.show)
 router.post('/project', projectsController.create)
 router.put('/project/:id', projectsController.update)
-router.delete('/skill/:id', projectsController.remove)
+router.delete('/projects/:id', projectsController.remove)
 
 // Keep project routes in a seperate controller file
 router.get('/education', educationController.index)
