@@ -3,7 +3,7 @@ var Schema = mongoose.Schema
 
 var SkillSchema = new Schema({
   skill: String,
-  score: Number
+  width: String
 })
 
 module.exports = mongoose.model('Skill', SkillSchema)

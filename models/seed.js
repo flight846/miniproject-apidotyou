@@ -64,47 +64,38 @@ var data = [
       {
         'title': 'A personal website and blog built on Wordpress and API call for displaying items for resume',
         'description': 'This website serves the user blogs, portfolio and resume by me.',
-        'link': 'http://www.yazidismail.com'
+        'link': 'http://resume.yazodismail.com',
+        'source': 'http://i.imgur.com/wqb1NCU.png'
       },
       {
         'title': 'An ExpressJS articles aggregation platform',
         'description': 'This articles TLDR generator app lets the user to aggregates, curates and serves quality articles. Say goodbye to internet junk.',
-        'link': 'https://flight846.github.io/readr-client/'
-      },
-      {
-        'title': 'API Server',
-        'description': 'A simple API server for my personal resume page built with NodeJS and ExpressJS framework',
-        'link': 'http://api-yazidismail.herokuapp.com/'
+        'link': 'https://flight846.github.io/readr-client/',
+        'source': 'http://i.imgur.com/3yfus7g.png'
       },
       {
         'title': 'API Client',
         'description': 'A simple Github API client',
-        'link': 'https://flight846.github.io/miniproject-Github_API_Client/'
+        'link': 'https://flight846.github.io/miniproject-Github_API_Client/',
+        'source': 'http://i.imgur.com/ujwGEFo.png'
       },
       {
         'title': 'A Ruby on Rails Q & A platform built on Rails Framework',
         'description': 'This simple Q & A app allows users to view, create, edit and delete qusetions and answers. Questions have a title and body (of content) ans users can answer and vote.',
-        'link': 'http://queryme2016.herokuapp.com/'
+        'link': 'http://queryme2016.herokuapp.com/',
+        'source': 'http://i.imgur.com/mkM5fcF.png'
       },
       {
         'title': 'Ruby on Rails Wiki App',
         'description': 'A Rails CRUD wiki App',
-        'link': 'https://wdi3-wiki.herokuapp.com/'
-      },
-      {
-        'title': 'HTML 5 2-player Quiz Game',
-        'description': 'A simple 2-player turn based HTML5 quiz game',
-        'link': 'http://flight846.github.io/wdi-project1a-html-quiz-game/'
+        'link': 'https://wdi3-wiki.herokuapp.com/',
+        'source': 'http://i.imgur.com/AuwrDnJ.png'
       },
       {
         'title': 'HTML 5 Simons Says Game',
         'description': 'A simple HTML5 Simon Says game ',
-        'link': 'http://flight846.github.io/wdi-project1b-ONaG/'
-      },
-      {
-        'title': 'HTML 5 Tic Tac Toe Game',
-        'description': 'A simple 2-player turn based HTML5 tic tac toe game',
-        'link': 'http://flight846.github.io/wdi-tictactoe-project/'
+        'link': 'http://flight846.github.io/wdi-project1b-ONaG/',
+        'source': 'http://i.imgur.com/SVOanvr.png'
       }
     ]
   },
@@ -113,47 +104,47 @@ var data = [
     'documents': [
       {
         'skill': 'HTML',
-        'score': 9
+        'width': '90%'
       },
       {
         'skill': 'CSS',
-        'score': 8
+        'width': '80%'
       },
       {
         'skill': 'JavaScript',
-        'score': 7
+        'width': '70%'
       },
       {
         'skill': 'JQuery',
-        'score': 7
+        'width': '70%'
       },
       {
         'skill': 'SqLite3',
-        'score': 8
+        'width': '80%'
       },
       {
         'skill': 'Postgresql',
-        'score': 8
+        'width': '80%'
       },
       {
         'skill': 'Ruby',
-        'score': 7
+        'width': '70%'
       },
       {
         'skill': 'Rails',
-        'score': 7
+        'width': '70%'
       },
       {
         'skill': 'NodeJS',
-        'score': 7.5
+        'width': '75%'
       },
       {
         'skill': 'Express',
-        'score': 8
+        'width': '80%'
       },
       {
         'skill': 'ReactJS',
-        'score': 5
+        'width': '50%'
       }
     ]
   },

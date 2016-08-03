@@ -7,7 +7,7 @@ function listSkills (req, res) {
     // rather than return all data which could be huge, we create a simplified array with only a couple of key fields
     const simplifiedList = []
     for (let i = 0; i < skillsArray.length; ++i) {
-      simplifiedList.push({id: skillsArray[i].id, skill: skillsArray[i].skill, score: skillsArray[i].score})
+      simplifiedList.push({id: skillsArray[i].id, skill: skillsArray[i].skill, width: skillsArray[i].width})
     }
     res.status(200).json(simplifiedList)
   })
